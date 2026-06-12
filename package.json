@@ -1,0 +1,45 @@
+{
+  "name": "tiff-viewer",
+  "displayName": "TIFF Viewer",
+  "description": "16/32bit TIFF viewer for VS Code",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "customEditors": [
+      {
+        "viewType": "tiffViewer.tiff",
+        "displayName": "TIFF Viewer",
+        "selector": [
+          {
+            "filenamePattern": "*.tif"
+          },
+          {
+            "filenamePattern": "*.tiff"
+          }
+        ],
+        "priority": "default"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^20.19.43",
+    "@types/vscode": "^1.74.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "geotiff": "^2.1.3"
+  }
+}
