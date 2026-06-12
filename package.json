@@ -3,6 +3,11 @@
   "displayName": "TIFF Viewer",
   "description": "16/32bit TIFF viewer for VS Code",
   "version": "0.0.1",
+  "publisher": "ishidat-rm",
+"repository": {
+  "type": "git",
+  "url": "https://github.com/ishidat-rm/tiff-viewer.git"
+},
   "engines": {
     "vscode": "^1.74.0"
   },
