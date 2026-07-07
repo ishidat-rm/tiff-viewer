@@ -2,7 +2,7 @@
   "name": "tiff-viewer",
   "displayName": "TIFF Viewer",
   "description": "16/32bit TIFF viewer for VS Code",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "ishidat-rm",
  
 "repository": {
